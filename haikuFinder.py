@@ -30,9 +30,9 @@ def process_haiku(row):
                 syllable_count_row = 0
                 words = group.split()
 
-                for word in words:
-                    cs = count_syllables(word)
-                    syllable_count_row += cs
+#                 for word in words:
+#                     cs = count_syllables(word)
+#                     syllable_count_row += cs
                 syllable_count_row = sum([count_syllables(word) for word in words])
 
                 result.append(syllable_count_row)
