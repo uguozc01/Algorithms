@@ -13,7 +13,7 @@ if __name__ == '__main__':
     while True:
         try:
             n = int(input().strip())
-        except:
+        except Exception as e:
             print('Enter an integer number')
             continue
         else:
