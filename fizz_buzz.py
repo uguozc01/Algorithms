@@ -13,8 +13,8 @@ if __name__ == '__main__':
     while True:
         try:
             n = int(input().strip())
-        except Exception as e:
-            print(e)
+        except:
+            print('Enter an integer number')
             continue
         else:
             fizzBuzz(n)
