@@ -10,9 +10,11 @@ def fizzBuzz(n):
                 print(i)
 
 if __name__ == '__main__':
-    try:
-        n = int(input().strip())
-    except Exception as e:
-        print(e)
-    else:
-        fizzBuzz(n)
+    while True:
+        try:
+            n = int(input().strip())
+        except Exception as e:
+            print(e)
+            continue
+        else:
+            fizzBuzz(n)
